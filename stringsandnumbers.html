@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="outputtext"></p>
+    <script>
+        var text1="ten";
+        var text2="5";
+        var num1= stringtonumber(text1);
+        var num2=stringtonumber(text2);
+
+        if(isNaN(num1) || isNaN(num2)){
+            document.getElementById(outputtext).innerHTML="you have entered an invalid number.Please try again";
+        }else {
+            document.getElementById(outputtext).innerHTML=num1 +num2;
+        }
+        document.getElementById("outputtext").innerHTML=num1+num2;
+        function stringtonumber(text){
+            return parseInt(text);
+        }
+    </script>
+    
+</body>
+</html>
